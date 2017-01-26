@@ -9,7 +9,9 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'sqlite3-ruby', '1.3.2' :require => 'sqlite3'
+
+gem 'pg'
 
 group :development do
 	gem 'rspec-rails'
@@ -19,7 +21,7 @@ group :test do
 	gem 'rspec'
 	gem 'webrat'
 end
- 
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
